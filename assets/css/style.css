@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .header-top {
+  height: 40px;
+  background-color: whitesmoke;
+}
+
+header .header-top .container {
+  height: 100%;
+}
+
+header .header-top .container .row {
+  height: 100%;
+}
+
+header .header-top .container .row ul {
+  margin: 0 !important;
+}
+
+header .header-top .container .row ul li a:hover {
+  color: #754747;
+}
+
+header .header-top .container .row ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+header .header-top .container .row .registration ul li:not(:last-child)::after {
+  content: "|";
+  position: relative;
+  left: 13px;
+}
+
+header .header-bottom .container .row ul {
+  margin: 0;
+}
+
+header .header-bottom .container .row ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header .header-bottom .container .row ul li a:hover {
+  border-bottom: 2px solid black;
+  padding-bottom: 8px;
+}
+
+header .header-bottom .container .row .search-basket .search {
+  position: relative;
+}
+
+header .header-bottom .container .row .search-basket .search .icon-search {
+  position: absolute;
+  left: -22px;
+  top: 15%;
+}
+
+header .header-bottom .container .row .search-basket .search .icon-search i {
+  width: 50px;
+}
+
+header .header-bottom .container .row .search-basket .search input {
+  border-radius: 20px;
+}
+
+header .header-bottom .container .row .search-basket .basket-wish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-bottom .container .row .search-basket .basket-wish ul {
+  width: 100px;
+}
+
+header .header-bottom .container .row .search-basket .basket-wish ul li i {
+  font-size: 25px;
+  color: black;
+}
+
+.basket-wish ul li:nth-child(3) {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-top, .search input, .basket-wish ul li:nth-child(1), .nav-links {
+    display: none;
+  }
+  .basket-wish ul li:nth-child(3) {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

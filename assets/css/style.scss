@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  .header-top {
+    height: 40px;
+    background-color: whitesmoke;
+    .container {
+      height: 100%;
+      .row {
+        height: 100%;
+        ul {
+          margin: 0 !important;
+          li {
+            a:hover {
+              color: rgb(117, 71, 71);
+            }
+          }
+          li {
+            a {
+              text-decoration: none;
+              color: black;
+              font-size: 12px;
+            }
+          }
+        }
+
+        .registration {
+          ul {
+            li:not(:last-child) {
+              &::after {
+                content: "|";
+                position: relative;
+                left: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .header-bottom {
+    .container {
+      .row {
+        ul {
+          margin: 0;
+          li {
+            a {
+              text-decoration: none;
+              color: black;
+            }
+            a:hover{
+                border-bottom:2px solid black ;
+                padding-bottom: 8px;
+            }
+          }
+        }
+        .search-basket {
+          .search {
+              position: relative;
+              .icon-search{
+                  position: absolute;
+                left: -22px;
+                  top: 15%;
+                  i{
+                    width: 50px;
+                  }
+                  
+                  
+              }
+            input {
+              border-radius: 20px;
+            }
+          }
+          .basket-wish {
+            display: flex;
+            align-items: center;
+            ul {
+              width: 100px;
+              li {
+                i {
+                  font-size: 25px;
+                  color: black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.basket-wish ul li:nth-child(3){
+display: none;
+}
+
+@media only screen and (max-width:768px) {
+  .header-top ,.search input ,.basket-wish ul li:nth-child(1),.nav-links{
+    display: none;
+  }
+  .basket-wish ul li:nth-child(3){
+    display: block;
+    }
+}
+
+
